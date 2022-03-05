@@ -208,20 +208,3 @@
 	--where IIF(c.Budget = r.Price, 'Yes', 'No') = 'Yes' --IIF(condition, value 1, value 2) allows you to compare values from one column to another for equality. 
 	group by c.Occupation, c.Budget, r.Price, IIF(c.Budget = r.Price, 'Yes', 'No')
 	order by count(c.Budget) desc
-
-	/* 
-	
-	1. What are the consumer demographics? Does this indicate a bias in the data sample?
-	Ans. The consumers are spread across 4 different cities in Mexico with majority of them (62%) from San Luis Potosi. 
-		 Almost 90% of the consumers are single and 82% of all consumers account for Students. 
-		 59% of the consumers prefer travelling via public transport.
-
-	2. Are there any demand & supply gaps that you can exploit in the market?
-	Ans. 29% of the population prefers eating Mexican cuisine, with American (3.33%) being the second most preferred cuisine, and Cafeteria and Pizzeria tying as the third most preferred cuisine (2.73%). 
-
-	3. If you were to invest in a restaurant, which characteristics would you be looking for?
-
-
-	4. What can you learn from the highest rated restaurants? Do consumer preferences have an effect on ratings?
-
-	*/
